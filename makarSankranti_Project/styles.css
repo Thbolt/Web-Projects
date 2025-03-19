@@ -1,0 +1,183 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #FFD700, #FFE4B5); /* Warm yellow gradient */
+    color: #5A3D2B;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #FF8C42, #FFD700); /* Orange to yellow */
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+/* Section Headers */
+section h2 {
+    font-size: 2.5rem;
+    color: #FF8C42;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* About Section */
+#about {
+    background: #FFFAE3; /* Light yellow */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Traditions Section */
+#traditions {
+    background: #FFE4B5; /* Soft peach */
+    padding: 50px 20px;
+}
+
+.tradition-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    background: white;
+    border: 2px solid #FF8C42; /* Orange border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+#gallery {
+    background: linear-gradient(to right, #FFD700, #FF6FB5); /* Yellow to pink gradient */
+    padding: 50px 20px;
+    color: white;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Recipe Section */
+#recipes {
+    background: #40BFFF; /* Bright kite blue */
+    padding: 50px 20px;
+    color: white;
+}
+
+#recipes .recipe {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    color: #5A3D2B;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #FF8C42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.cta-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background: #3CB371; /* Bright green */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #2E8B57; /* Slightly darker green */
+    transform: scale(1.05);
+}
+/* Background styling */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #87CEEB, #FFD700); /* Sky blue to golden */
+    z-index: -1;
+}
+
+/* Kite appearance */
+.kite {
+    position: absolute !important;
+    width: 80px !important;
+    height: 80px !important;
+    background-image: url('kite1.png') !important; /* Replace with the correct path to your kite image */
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    animation: flyKite 5s ease-in-out infinite !important;
+    
+    
+}
+
+/* Flying animation */
+@keyframes flyKite {
+    0% {
+        transform: translateX(-100vw) translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(20vw) translateY(-50px) rotate(45deg);
+    }
+    50% {
+        transform: translateX(40vw) translateY(0) rotate(90deg);
+    }
+    75% {
+        transform: translateX(60vw) translateY(-50px) rotate(135deg);
+    }
+    100% {
+        transform: translateX(100vw) translateY(0) rotate(180deg);
+    }
+}
